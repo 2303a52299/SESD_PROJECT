@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">HR Management System</a>
+            <a href="post-job.html" class="btn btn-primary">Post New Job</a>
+        </nav>
+
+        <main>
+            <h1>Current Job Openings</h1>
+            
+            <div id="job-list">
+                </div>
+            
+            <div id="no-jobs" style="display: none;">
+                <p>No jobs have been posted yet. Click "Post New Job" to get started.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

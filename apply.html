@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <main>
+            <div class="card">
+                <div class="card-header">
+                    <h2 id="job-title">Apply for: ...</h2>
+                </div>
+                <div class="card-content">
+                    <form id="apply-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resume">Resume / Cover Letter</label>
+                            <textarea id="resume" placeholder="In a real app, this would be a file upload. For this demo, just paste your info." required></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/apply.js"></script>
+</body>
+</html>

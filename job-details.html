@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Job Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">HR Management System</a>
+            <a href="index.html">Back to Dashboard</a>
+        </nav>
+
+        <main>
+            <div id="job-details-container" class="card">
+                <p>Loading job details...</p>
+            </div>
+
+            <h2>Applicants</h2>
+            <div id="applicant-list">
+                </div>
+            
+            <div id="no-applicants" style="display: none;">
+                <p>There are no applications for this job yet.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/job-details.js"></script>
+</body>
+</html>

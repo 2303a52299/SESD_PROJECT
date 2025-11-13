@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <div class="card">
+            <h1>Thank You!</h1>
+            <p id="success-message">Your application has been received.</p>
+            <p>We will contact you if you are selected for an interview.</p>
+            <br>
+            <a href="index.html" class="btn">Return to HR Dashboard (Demo)</a>
+        </div>
+    </div>
+    <script>
+        // Personalize the message
+        const urlParams = new URLSearchParams(window.location.search);
+        const jobTitle = urlParams.get('jobTitle');
+        if (jobTitle) {
+            document.getElementById('success-message').textContent = `Your application for "${jobTitle}" has been received.`;
+        }
+    </script>
+</body>
+</html>
